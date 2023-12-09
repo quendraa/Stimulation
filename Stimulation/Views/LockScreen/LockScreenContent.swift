@@ -2,19 +2,20 @@
 //  LockScreenContent.swift
 //  Stimulation
 //
-//  Created by Konrad Sokołowski on 09/12/2023.
+//  Created by Quendra Verhoef on 09/12/2023.
 //
 
 import SwiftUI
+import Combine
 
 struct LockScreenContent: View {
     @StateObject private var dateViewModel = DateViewModel()
     
     @State private var isTextVisible = false
-    @State private var currentMessageIndex = 0
-    @State private var displayedMessage: Message?
+    @State private var displayedMessages: [Message] = []
+    @State private var currentIndex = 0
     
-    var messages: [Message] = load("messages.json")
+    private var messages: [Message] = load("messages.json")
     
     var body: some View {
         VStack {
@@ -38,25 +39,19 @@ struct LockScreenContent: View {
                                     .font(.system(size: 98))
                                     .foregroundColor(.white)
                                 
-                                // Displayed message notification
-                                if let message = displayedMessage {
-                                    MessageItem(message: message)
-                                        .transition(.slide)
-                                        .onAppear {
-                                            // Start a timer to update the displayed message notification
-                                            Timer.scheduledTimer(withTimeInterval: 3, repeats: true) { _ in
-                                                withAnimation {
-                                                    updateDisplayedMessage()
-                                                }
-                                            }
-                                        }
+                                // Displayed message notifications
+                                ForEach(displayedMessages, id: \.id) { message in
+                                    withAnimation(Animation.easeInOut(duration: 4)) {
+                                        MessageItem(message: message)
+                                            .transition(.move(edge: .bottom))
+                                    }
                                 }
                                 
                                 Spacer()
                                 
                                 // Additional text to appear from the bottom
                                 if isTextVisible {
-                                    withAnimation(Animation.easeInOut(duration: 1)) {
+                                    withAnimation(Animation.easeInOut(duration: 1.5)) {
                                         Text("Swipe up to unlock")
                                             .font(.headline)
                                             .foregroundColor(.white)
@@ -69,23 +64,27 @@ struct LockScreenContent: View {
                             Timer.scheduledTimer(withTimeInterval: 3, repeats: false) { _ in
                                 withAnimation {
                                     isTextVisible.toggle()
+                                    startDisplayingMessages()
                                 }
                             }
-                        }
+                            }.padding(.horizontal, 25)
                             
                         )
                 }
     }
     
-    private func updateDisplayedMessage() {
-            if currentMessageIndex < messages.count {
-                displayedMessage = messages[currentMessageIndex]
-                currentMessageIndex += 1
+    private func startDisplayingMessages() {
+        Timer.scheduledTimer(withTimeInterval: 2, repeats: true) { timer in
+            if currentIndex < messages.count {
+                withAnimation {
+                    displayedMessages.append(messages[currentIndex])
+                    currentIndex += 1
+                }
             } else {
-                currentMessageIndex = 0
-                displayedMessage = nil
+                timer.invalidate()
             }
         }
+    }
 }
 
 #Preview {

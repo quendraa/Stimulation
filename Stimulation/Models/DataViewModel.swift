@@ -26,8 +26,8 @@ class DateViewModel: ObservableObject {
             }
             .store(in: &cancellables)
 
-        Timer.scheduledTimer(withTimeInterval: 10, repeats: true) { [weak self] _ in
-            self?.currentDateText = "yes"
+        Timer.scheduledTimer(withTimeInterval: 40, repeats: true) { [weak self] _ in
+            self?.currentDateText = "hint: swipe to unlock"
         }
     }
 

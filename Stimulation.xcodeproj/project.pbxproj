@@ -154,11 +154,9 @@
 		065409A02B2464AE00B4A7AA /* Views */ = {
 			isa = PBXGroup;
 			children = (
-				065409A12B2464F800B4A7AA /* LockScreenView.swift */,
-				065409A32B24654900B4A7AA /* LockScreenContent.swift */,
-				065409A52B24656D00B4A7AA /* PasswordScreenView.swift */,
-				065409B72B249F0E00B4A7AA /* MessageItem.swift */,
-				065409B92B24AC3800B4A7AA /* MessagesList.swift */,
+				065409BD2B24CD5B00B4A7AA /* Message */,
+				065409BC2B24CD4000B4A7AA /* PasswordScreen */,
+				065409BB2B24CD3000B4A7AA /* LockScreen */,
 			);
 			path = Views;
 			sourceTree = "<group>";
@@ -179,6 +177,32 @@
 				065409B32B249B2B00B4A7AA /* messages.json */,
 			);
 			path = Resources;
+			sourceTree = "<group>";
+		};
+		065409BB2B24CD3000B4A7AA /* LockScreen */ = {
+			isa = PBXGroup;
+			children = (
+				065409A12B2464F800B4A7AA /* LockScreenView.swift */,
+				065409A32B24654900B4A7AA /* LockScreenContent.swift */,
+			);
+			path = LockScreen;
+			sourceTree = "<group>";
+		};
+		065409BC2B24CD4000B4A7AA /* PasswordScreen */ = {
+			isa = PBXGroup;
+			children = (
+				065409A52B24656D00B4A7AA /* PasswordScreenView.swift */,
+			);
+			path = PasswordScreen;
+			sourceTree = "<group>";
+		};
+		065409BD2B24CD5B00B4A7AA /* Message */ = {
+			isa = PBXGroup;
+			children = (
+				065409B72B249F0E00B4A7AA /* MessageItem.swift */,
+				065409B92B24AC3800B4A7AA /* MessagesList.swift */,
+			);
+			path = Message;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
