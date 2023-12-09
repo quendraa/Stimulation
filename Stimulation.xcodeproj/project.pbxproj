@@ -15,6 +15,15 @@
 		065409882B245FA800B4A7AA /* StimulationTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 065409872B245FA800B4A7AA /* StimulationTests.swift */; };
 		065409922B245FA800B4A7AA /* StimulationUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 065409912B245FA800B4A7AA /* StimulationUITests.swift */; };
 		065409942B245FA800B4A7AA /* StimulationUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 065409932B245FA800B4A7AA /* StimulationUITestsLaunchTests.swift */; };
+		065409A22B2464F800B4A7AA /* LockScreenView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 065409A12B2464F800B4A7AA /* LockScreenView.swift */; };
+		065409A42B24654900B4A7AA /* LockScreenContent.swift in Sources */ = {isa = PBXBuildFile; fileRef = 065409A32B24654900B4A7AA /* LockScreenContent.swift */; };
+		065409A62B24656D00B4A7AA /* PasswordScreenView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 065409A52B24656D00B4A7AA /* PasswordScreenView.swift */; };
+		065409AD2B24730600B4A7AA /* DataViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 065409AC2B24730600B4A7AA /* DataViewModel.swift */; };
+		065409B02B24946900B4A7AA /* MessageModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 065409AF2B24946900B4A7AA /* MessageModel.swift */; };
+		065409B42B249B2B00B4A7AA /* messages.json in Resources */ = {isa = PBXBuildFile; fileRef = 065409B32B249B2B00B4A7AA /* messages.json */; };
+		065409B62B249C6D00B4A7AA /* MessageLoader.swift in Sources */ = {isa = PBXBuildFile; fileRef = 065409B52B249C6D00B4A7AA /* MessageLoader.swift */; };
+		065409B82B249F0E00B4A7AA /* MessageItem.swift in Sources */ = {isa = PBXBuildFile; fileRef = 065409B72B249F0E00B4A7AA /* MessageItem.swift */; };
+		065409BA2B24AC3800B4A7AA /* MessagesList.swift in Sources */ = {isa = PBXBuildFile; fileRef = 065409B92B24AC3800B4A7AA /* MessagesList.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -46,6 +55,15 @@
 		0654098D2B245FA800B4A7AA /* StimulationUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = StimulationUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		065409912B245FA800B4A7AA /* StimulationUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StimulationUITests.swift; sourceTree = "<group>"; };
 		065409932B245FA800B4A7AA /* StimulationUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StimulationUITestsLaunchTests.swift; sourceTree = "<group>"; };
+		065409A12B2464F800B4A7AA /* LockScreenView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LockScreenView.swift; sourceTree = "<group>"; };
+		065409A32B24654900B4A7AA /* LockScreenContent.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LockScreenContent.swift; sourceTree = "<group>"; };
+		065409A52B24656D00B4A7AA /* PasswordScreenView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PasswordScreenView.swift; sourceTree = "<group>"; };
+		065409AC2B24730600B4A7AA /* DataViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DataViewModel.swift; sourceTree = "<group>"; };
+		065409AF2B24946900B4A7AA /* MessageModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MessageModel.swift; sourceTree = "<group>"; };
+		065409B32B249B2B00B4A7AA /* messages.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; name = messages.json; path = ../../../../../Downloads/messages.json; sourceTree = "<group>"; };
+		065409B52B249C6D00B4A7AA /* MessageLoader.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MessageLoader.swift; sourceTree = "<group>"; };
+		065409B72B249F0E00B4A7AA /* MessageItem.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MessageItem.swift; sourceTree = "<group>"; };
+		065409B92B24AC3800B4A7AA /* MessagesList.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MessagesList.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -96,6 +114,9 @@
 		065409732B245FA600B4A7AA /* Stimulation */ = {
 			isa = PBXGroup;
 			children = (
+				065409B12B249ABE00B4A7AA /* Resources */,
+				065409AE2B24944D00B4A7AA /* Models */,
+				065409A02B2464AE00B4A7AA /* Views */,
 				065409742B245FA600B4A7AA /* StimulationApp.swift */,
 				065409762B245FA600B4A7AA /* ContentView.swift */,
 				065409782B245FA600B4A7AA /* Item.swift */,
@@ -128,6 +149,36 @@
 				065409932B245FA800B4A7AA /* StimulationUITestsLaunchTests.swift */,
 			);
 			path = StimulationUITests;
+			sourceTree = "<group>";
+		};
+		065409A02B2464AE00B4A7AA /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				065409A12B2464F800B4A7AA /* LockScreenView.swift */,
+				065409A32B24654900B4A7AA /* LockScreenContent.swift */,
+				065409A52B24656D00B4A7AA /* PasswordScreenView.swift */,
+				065409B72B249F0E00B4A7AA /* MessageItem.swift */,
+				065409B92B24AC3800B4A7AA /* MessagesList.swift */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		065409AE2B24944D00B4A7AA /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				065409B52B249C6D00B4A7AA /* MessageLoader.swift */,
+				065409AC2B24730600B4A7AA /* DataViewModel.swift */,
+				065409AF2B24946900B4A7AA /* MessageModel.swift */,
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
+		065409B12B249ABE00B4A7AA /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				065409B32B249B2B00B4A7AA /* messages.json */,
+			);
+			path = Resources;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -234,6 +285,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				065409B42B249B2B00B4A7AA /* messages.json in Resources */,
 				0654097E2B245FA800B4A7AA /* Preview Assets.xcassets in Resources */,
 				0654097B2B245FA800B4A7AA /* Assets.xcassets in Resources */,
 			);
@@ -260,9 +312,17 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				065409A42B24654900B4A7AA /* LockScreenContent.swift in Sources */,
 				065409772B245FA600B4A7AA /* ContentView.swift in Sources */,
+				065409BA2B24AC3800B4A7AA /* MessagesList.swift in Sources */,
 				065409792B245FA600B4A7AA /* Item.swift in Sources */,
 				065409752B245FA600B4A7AA /* StimulationApp.swift in Sources */,
+				065409B82B249F0E00B4A7AA /* MessageItem.swift in Sources */,
+				065409A22B2464F800B4A7AA /* LockScreenView.swift in Sources */,
+				065409B02B24946900B4A7AA /* MessageModel.swift in Sources */,
+				065409AD2B24730600B4A7AA /* DataViewModel.swift in Sources */,
+				065409A62B24656D00B4A7AA /* PasswordScreenView.swift in Sources */,
+				065409B62B249C6D00B4A7AA /* MessageLoader.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
