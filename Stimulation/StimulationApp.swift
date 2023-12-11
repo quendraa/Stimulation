@@ -2,7 +2,7 @@
 //  StimulationApp.swift
 //  Stimulation
 //
-//  Created by Konrad Sokołowski on 09/12/2023.
+//  Created by Quendra Verhoef on 09/12/2023.
 //
 
 import SwiftUI
@@ -33,9 +33,21 @@ import SwiftData
 
 @main
 struct YourApp: App {
+    @StateObject private var viewModel = PasswordScreenViewModel()
+
     var body: some Scene {
         WindowGroup {
+            ContentView()
+                .environmentObject(viewModel)
+        }
+    }
+}
+
+struct ContentView: View {
+    var body: some View {
+        NavigationView {
             LockScreenView()
         }
     }
 }
+

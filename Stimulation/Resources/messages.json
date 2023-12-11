@@ -1,0 +1,26 @@
+[
+  {
+    "id": 0,
+    "sender": "Messages",
+    "content": "Why are u not responding?",
+    "timestamp": "2021-11-30T12:34:56Z"
+  },
+  {
+    "id": 1,
+    "sender": "Messages",
+    "content": "Hello???",
+    "timestamp": "2021-11-30T12:35:56Z"
+  },
+  {
+    "id": 2,
+    "sender": "Messages",
+    "content": "Lisa you know i dont like when u b doing this",
+    "timestamp": "2021-11-30T12:35:56Z"
+  },
+  {
+    "id": 3,
+    "sender": "Messages",
+    "content": "Ur gonna regret this.",
+    "timestamp": "2021-11-30T12:36:56Z"
+  }
+]

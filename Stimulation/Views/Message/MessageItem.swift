@@ -2,7 +2,7 @@
 //  MessageView.swift
 //  Stimulation
 //
-//  Created by Konrad Sokołowski on 09/12/2023.
+//  Created by Quendra Verhoef on 09/12/2023.
 //
 
 import SwiftUI
@@ -35,7 +35,7 @@ struct MessageItem: View {
                     .layoutPriority(2)
             }
             .padding(8) // Padding around the entire content
-            .background(Color.white)
+            .background(Color.white.opacity(0.6))
             .cornerRadius(12) // Adjust the corner radius as needed
             .shadow(radius: 3) // Add shadow for depth
         }

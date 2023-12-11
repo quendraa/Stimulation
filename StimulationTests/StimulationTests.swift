@@ -2,7 +2,7 @@
 //  StimulationTests.swift
 //  StimulationTests
 //
-//  Created by Konrad Sokołowski on 09/12/2023.
+//  Created by Quendra Verhoef on 09/12/2023.
 //
 
 import XCTest

@@ -41,7 +41,7 @@ struct LockScreenContent: View {
                                 
                                 // Displayed message notifications
                                 ForEach(displayedMessages, id: \.id) { message in
-                                    withAnimation(Animation.easeInOut(duration: 4)) {
+                                    withAnimation(Animation.easeInOut(duration: 2)) {
                                         MessageItem(message: message)
                                             .transition(.move(edge: .bottom))
                                     }
@@ -74,7 +74,7 @@ struct LockScreenContent: View {
     }
     
     private func startDisplayingMessages() {
-        Timer.scheduledTimer(withTimeInterval: 2, repeats: true) { timer in
+        Timer.scheduledTimer(withTimeInterval: 3, repeats: true) { timer in
             if currentIndex < messages.count {
                 withAnimation {
                     displayedMessages.append(messages[currentIndex])

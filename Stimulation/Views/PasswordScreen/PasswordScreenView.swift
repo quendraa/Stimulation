@@ -2,23 +2,25 @@
 //  PasswordScreenView.swift
 //  Stimulation
 //
-//  Created by Konrad Sokołowski on 09/12/2023.
+//  Created by Quendra Verhoef on 09/12/2023.
 //
 
 import SwiftUI
 
 struct PasswordScreenView: View {
+    @EnvironmentObject var viewModel: PasswordScreenViewModel
+
     var body: some View {
-            // Your password screen UI
-            VStack {
-                Text("Enter Password")
-                    .font(.title)
-                // Add round buttons with numbers here
+        PasswordScreenContent()
+            .navigationBarHidden(true)
+            .onChange(of: viewModel.showHomeScreen) { newValue in
+                if newValue {
+                    viewModel.showPasswordScreen = false
+                }
             }
-            .background(Color.white)
-            .edgesIgnoringSafeArea(.all)
     }
 }
+
 
 #Preview {
     PasswordScreenView()

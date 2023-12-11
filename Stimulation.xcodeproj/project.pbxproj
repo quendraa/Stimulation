@@ -7,9 +7,6 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		065409752B245FA600B4A7AA /* StimulationApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 065409742B245FA600B4A7AA /* StimulationApp.swift */; };
-		065409772B245FA600B4A7AA /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 065409762B245FA600B4A7AA /* ContentView.swift */; };
-		065409792B245FA600B4A7AA /* Item.swift in Sources */ = {isa = PBXBuildFile; fileRef = 065409782B245FA600B4A7AA /* Item.swift */; };
 		0654097B2B245FA800B4A7AA /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 0654097A2B245FA800B4A7AA /* Assets.xcassets */; };
 		0654097E2B245FA800B4A7AA /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 0654097D2B245FA800B4A7AA /* Preview Assets.xcassets */; };
 		065409882B245FA800B4A7AA /* StimulationTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 065409872B245FA800B4A7AA /* StimulationTests.swift */; };
@@ -20,10 +17,15 @@
 		065409A62B24656D00B4A7AA /* PasswordScreenView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 065409A52B24656D00B4A7AA /* PasswordScreenView.swift */; };
 		065409AD2B24730600B4A7AA /* DataViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 065409AC2B24730600B4A7AA /* DataViewModel.swift */; };
 		065409B02B24946900B4A7AA /* MessageModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 065409AF2B24946900B4A7AA /* MessageModel.swift */; };
-		065409B42B249B2B00B4A7AA /* messages.json in Resources */ = {isa = PBXBuildFile; fileRef = 065409B32B249B2B00B4A7AA /* messages.json */; };
 		065409B62B249C6D00B4A7AA /* MessageLoader.swift in Sources */ = {isa = PBXBuildFile; fileRef = 065409B52B249C6D00B4A7AA /* MessageLoader.swift */; };
 		065409B82B249F0E00B4A7AA /* MessageItem.swift in Sources */ = {isa = PBXBuildFile; fileRef = 065409B72B249F0E00B4A7AA /* MessageItem.swift */; };
 		065409BA2B24AC3800B4A7AA /* MessagesList.swift in Sources */ = {isa = PBXBuildFile; fileRef = 065409B92B24AC3800B4A7AA /* MessagesList.swift */; };
+		065409C02B25C3B600B4A7AA /* PasswordScreenContent.swift in Sources */ = {isa = PBXBuildFile; fileRef = 065409BF2B25C3B600B4A7AA /* PasswordScreenContent.swift */; };
+		065409C22B25C5D000B4A7AA /* PasswordButtonView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 065409C12B25C5D000B4A7AA /* PasswordButtonView.swift */; };
+		065409C32B25CE5C00B4A7AA /* messages.json in Resources */ = {isa = PBXBuildFile; fileRef = 065409BE2B25C32500B4A7AA /* messages.json */; };
+		065409C52B2653DE00B4A7AA /* PasswordScreenViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 065409C42B2653DE00B4A7AA /* PasswordScreenViewModel.swift */; };
+		065409C82B265CB200B4A7AA /* HomeScreenView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 065409C72B265CB200B4A7AA /* HomeScreenView.swift */; };
+		065409CA2B26707500B4A7AA /* StimulationApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 065409C92B26707500B4A7AA /* StimulationApp.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -45,9 +47,6 @@
 
 /* Begin PBXFileReference section */
 		065409712B245FA600B4A7AA /* Stimulation.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Stimulation.app; sourceTree = BUILT_PRODUCTS_DIR; };
-		065409742B245FA600B4A7AA /* StimulationApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StimulationApp.swift; sourceTree = "<group>"; };
-		065409762B245FA600B4A7AA /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
-		065409782B245FA600B4A7AA /* Item.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Item.swift; sourceTree = "<group>"; };
 		0654097A2B245FA800B4A7AA /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		0654097D2B245FA800B4A7AA /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 		065409832B245FA800B4A7AA /* StimulationTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = StimulationTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -60,10 +59,15 @@
 		065409A52B24656D00B4A7AA /* PasswordScreenView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PasswordScreenView.swift; sourceTree = "<group>"; };
 		065409AC2B24730600B4A7AA /* DataViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DataViewModel.swift; sourceTree = "<group>"; };
 		065409AF2B24946900B4A7AA /* MessageModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MessageModel.swift; sourceTree = "<group>"; };
-		065409B32B249B2B00B4A7AA /* messages.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; name = messages.json; path = ../../../../../Downloads/messages.json; sourceTree = "<group>"; };
 		065409B52B249C6D00B4A7AA /* MessageLoader.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MessageLoader.swift; sourceTree = "<group>"; };
 		065409B72B249F0E00B4A7AA /* MessageItem.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MessageItem.swift; sourceTree = "<group>"; };
 		065409B92B24AC3800B4A7AA /* MessagesList.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MessagesList.swift; sourceTree = "<group>"; };
+		065409BE2B25C32500B4A7AA /* messages.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = messages.json; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.json; };
+		065409BF2B25C3B600B4A7AA /* PasswordScreenContent.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PasswordScreenContent.swift; sourceTree = "<group>"; };
+		065409C12B25C5D000B4A7AA /* PasswordButtonView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PasswordButtonView.swift; sourceTree = "<group>"; };
+		065409C42B2653DE00B4A7AA /* PasswordScreenViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PasswordScreenViewModel.swift; sourceTree = "<group>"; };
+		065409C72B265CB200B4A7AA /* HomeScreenView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeScreenView.swift; sourceTree = "<group>"; };
+		065409C92B26707500B4A7AA /* StimulationApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StimulationApp.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -117,11 +121,9 @@
 				065409B12B249ABE00B4A7AA /* Resources */,
 				065409AE2B24944D00B4A7AA /* Models */,
 				065409A02B2464AE00B4A7AA /* Views */,
-				065409742B245FA600B4A7AA /* StimulationApp.swift */,
-				065409762B245FA600B4A7AA /* ContentView.swift */,
-				065409782B245FA600B4A7AA /* Item.swift */,
 				0654097A2B245FA800B4A7AA /* Assets.xcassets */,
 				0654097C2B245FA800B4A7AA /* Preview Content */,
+				065409C92B26707500B4A7AA /* StimulationApp.swift */,
 			);
 			path = Stimulation;
 			sourceTree = "<group>";
@@ -154,6 +156,7 @@
 		065409A02B2464AE00B4A7AA /* Views */ = {
 			isa = PBXGroup;
 			children = (
+				065409C62B265CA200B4A7AA /* HomeScreen */,
 				065409BD2B24CD5B00B4A7AA /* Message */,
 				065409BC2B24CD4000B4A7AA /* PasswordScreen */,
 				065409BB2B24CD3000B4A7AA /* LockScreen */,
@@ -174,7 +177,7 @@
 		065409B12B249ABE00B4A7AA /* Resources */ = {
 			isa = PBXGroup;
 			children = (
-				065409B32B249B2B00B4A7AA /* messages.json */,
+				065409BE2B25C32500B4A7AA /* messages.json */,
 			);
 			path = Resources;
 			sourceTree = "<group>";
@@ -192,6 +195,9 @@
 			isa = PBXGroup;
 			children = (
 				065409A52B24656D00B4A7AA /* PasswordScreenView.swift */,
+				065409BF2B25C3B600B4A7AA /* PasswordScreenContent.swift */,
+				065409C12B25C5D000B4A7AA /* PasswordButtonView.swift */,
+				065409C42B2653DE00B4A7AA /* PasswordScreenViewModel.swift */,
 			);
 			path = PasswordScreen;
 			sourceTree = "<group>";
@@ -203,6 +209,14 @@
 				065409B92B24AC3800B4A7AA /* MessagesList.swift */,
 			);
 			path = Message;
+			sourceTree = "<group>";
+		};
+		065409C62B265CA200B4A7AA /* HomeScreen */ = {
+			isa = PBXGroup;
+			children = (
+				065409C72B265CB200B4A7AA /* HomeScreenView.swift */,
+			);
+			path = HomeScreen;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -309,9 +323,9 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				065409B42B249B2B00B4A7AA /* messages.json in Resources */,
 				0654097E2B245FA800B4A7AA /* Preview Assets.xcassets in Resources */,
 				0654097B2B245FA800B4A7AA /* Assets.xcassets in Resources */,
+				065409C32B25CE5C00B4A7AA /* messages.json in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -337,14 +351,16 @@
 			buildActionMask = 2147483647;
 			files = (
 				065409A42B24654900B4A7AA /* LockScreenContent.swift in Sources */,
-				065409772B245FA600B4A7AA /* ContentView.swift in Sources */,
 				065409BA2B24AC3800B4A7AA /* MessagesList.swift in Sources */,
-				065409792B245FA600B4A7AA /* Item.swift in Sources */,
-				065409752B245FA600B4A7AA /* StimulationApp.swift in Sources */,
+				065409CA2B26707500B4A7AA /* StimulationApp.swift in Sources */,
+				065409C22B25C5D000B4A7AA /* PasswordButtonView.swift in Sources */,
+				065409C02B25C3B600B4A7AA /* PasswordScreenContent.swift in Sources */,
 				065409B82B249F0E00B4A7AA /* MessageItem.swift in Sources */,
 				065409A22B2464F800B4A7AA /* LockScreenView.swift in Sources */,
+				065409C52B2653DE00B4A7AA /* PasswordScreenViewModel.swift in Sources */,
 				065409B02B24946900B4A7AA /* MessageModel.swift in Sources */,
 				065409AD2B24730600B4A7AA /* DataViewModel.swift in Sources */,
+				065409C82B265CB200B4A7AA /* HomeScreenView.swift in Sources */,
 				065409A62B24656D00B4A7AA /* PasswordScreenView.swift in Sources */,
 				065409B62B249C6D00B4A7AA /* MessageLoader.swift in Sources */,
 			);
